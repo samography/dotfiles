@@ -1,0 +1,24 @@
+[user]
+  name = Sam Cohen
+  email = sam@samcohen.org
+[core]
+  editor = vi
+  excludesfile = $HOME/.gitignore 
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = gitignorereen
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = red bold 
+  untracked = cyan
+[merge]
+  log = true
+  tool = ksdiff
