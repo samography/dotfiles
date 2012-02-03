@@ -1,0 +1,13 @@
+# Don't show copyright message on startup
+startup_message off
+
+# Status Line
+caption string "%?%F%{= Bk}%? %C%A %D %d-%m-%Y %{= kB} %t%= %?%F%{= Bk}%:%{= wk}%? %n "
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+
+# Start up some windows automatically
+screen -t bash        0 bash
+screen -t irssi       1 irssi
+screen -t vi          2 vi
+screen -t mail       0 mutt
